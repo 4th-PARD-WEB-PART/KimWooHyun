@@ -9,15 +9,27 @@ function App() {
         <h1 className="Name">Kim Woo hyun</h1>
         <p className="format">pard 4th web part <br></br>
           assignment1 - introduce</p>
-        <p>
-          <button type="button" className="button" onClick="scrollToSection()">name</button>
-          <p>김우현</p> <br></br>
-          <button type="button" className="button">picture</button>
-          <p>
-            <img src={snowImage} className="Image" />
-            <img src={rowImage} className="Image" />
+          <p className="divBox">
+          <button type="button" className="button" onClick="scrollToSection()">name/mbti</button>
+          <p>김우현/INFP</p> <br></br>
           </p>
+
+          <p className="divBox">
+          <button type="button" className="button">picture</button>
+          <p className="imgBox">
+            <img src={snowImage} className="snowImage" />
+            <br></br>
+            Trip - Sapporo <br></br>
+            <br></br>
+            <img src={rowImage} className="rowImage" />
+            <br></br>
+            Club - Armstrong<br></br>
+            </p>
           <button type="button" className="button">aim</button>
+          <p>
+            2024 aims <br/>
+            구체적인 전공 알아보기 in computer science
+          </p>
           <button type="button" className="button">fav.3</button>
         </p>
       </header>

@@ -5,7 +5,7 @@
 }
 
 .App-header {
-  background-color: #166ebf;
+  background-color: #2378c7;
   min-height: 100vh;
   display:flex;
   flex-direction: column;
@@ -21,28 +21,60 @@
 .Name {
   padding-left: 20px;
   padding-top: 10px;
-  border:#166ebf;
+  border:#2378c7;
   border-left: black;
   border-style:inset;
 }
 
+.introTable {
+  width: auto;
+  height: auto;
+  background-color: #2378c7;
+  border-style: outset;
+  border-color: black;
+}
+
+.divBox {
+  width: 1000px;
+  height: fit-content;
+  border:#2378c7;
+  border-top: black;
+  border-style: solid;
+}
+
 .button {
-  width : 100px;
-  height: 50px;
+  width : auto;
+  height: 40px;
   padding: 5px 10px ;
   background-color:#a5d1e3;
   font-family:sans-serif;
   font-weight: 800;
   font-size:x-large;
-  border-radius: 22px;
+  margin-top: 40px;
 }
 
-.Image {
+.imgBox {
+  text-align: center;
+  margin-left:  150px;
+  margin-right: 150px;
+}
+
+.snowImage {
   width: 216px;
   height: 288px;
   display: inline-block;
+  border-color: black;
+  border-style: outset;
 }
 
-.Image + Image {
-  margin-left: 20px;
+.rowImage {
+  width: 288px;
+  height: 162px;
+  display: inline-block;
+  border-color: black;
+  border-style: outset; 
+}
+
+.snowImage + .rowImage {
+  margin-left: 50px;
 }
