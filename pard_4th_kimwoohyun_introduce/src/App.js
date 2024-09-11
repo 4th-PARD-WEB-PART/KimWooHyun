@@ -27,10 +27,17 @@ function App() {
             </p>
           <button type="button" className="button">aim</button>
           <p>
-            2024 aims <br/>
-            구체적인 전공 알아보기 in computer science
+            2024 aims <br/> <br/>
+            1. 구체적인 전공 알아보기 in computer science<br/>
+            2. 달리기 - NIKE Run club greem level<br/>
+            3. 성격 고치기 - I에서 E, P에서 J
           </p>
           <button type="button" className="button">fav.3</button>
+          <p>
+            1. 운동 - 헬스, 수영, 러닝<br></br>
+            2. 노래듣기 &lt;락,RnB&gt;<br/>
+            3. 겨울 - 눈, 입김
+          </p>
         </p>
       </header>
     </div>
