@@ -30,7 +30,7 @@ function App() {
             2024 aims <br/> <br/>
             1. 구체적인 전공 알아보기 in computer science<br/>
             2. 달리기 - NIKE Run club greem level<br/>
-            3. 성격 고치기 - I에서 E, P에서 J
+            3. 성격 바꾸기 - I에서 E, P에서 J
           </p>
           <button type="button" className="button">fav.3</button>
           <p>
