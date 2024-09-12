@@ -75,6 +75,19 @@
   border-style: outset; 
 }
 
+.albumImage {
+  width: 288px;
+  height: 288px;
+  display: inline-block;
+  border-color: black;
+  border-style: outset; 
+}
+
 .snowImage + .rowImage {
   margin-left: 50px;
+}
+
+.green:hover::after {
+  background-color: green;
+  content: " (250.0km - 500.0km)";
 }
