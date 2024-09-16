@@ -45,10 +45,6 @@
   color: #ACB5BD;
 }
 
-.object:hover {
-  color: #15B886;
-}
-
 .inputText1 {
   outline: none;
   padding-left: 6px;
@@ -65,11 +61,17 @@
   height: 30px;
 }
 
-.inputText1:hover {
+
+.box:hover .object{
+  color:#15B886;
+}
+
+.box:hover .inputText1{
   color: #15B886;
   border: none;
   border-bottom: 1px solid #15B886;
 }
+
 
 .inputText2 {
   outline: none;
@@ -87,11 +89,12 @@
   height: 30px;
 }
 
-.inputText2:hover {
+.box:hover .inputText2{
   color: #15B886;
   border: none;
   border-bottom: 1px solid #15B886;
 }
+
 
 .inputText3 {
   outline: none;
@@ -109,11 +112,12 @@
   height: 30px;
 }
 
-.inputText3:hover {
+.box:hover .inputText3{
   color: #15B886;
   border: none;
   border-bottom: 1px solid #15B886;
 }
+
 
 .inputText4 {
   outline: none;
@@ -131,11 +135,12 @@
   height: 30px;
 }
 
-.inputText4:hover {
+.box:hover .inputText4{
   color: #15B886;
   border: none;
   border-bottom: 1px solid #15B886;
 }
+
 
 .checkbox {
   width: 15px;
