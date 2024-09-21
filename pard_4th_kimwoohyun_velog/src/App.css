@@ -143,15 +143,11 @@
 
 
 .checkbox {
-  width: 15px;
-  height: 15px;
-  top: 691px;
-  left: 730px;
-  gap: 0px;
   border-radius: 3px 0px 0px 0px;
   border: 1px 0px 0px 0px;
   opacity: 0px;
   margin-right: 10px;
+  vertical-align:text-top;
 }
 
 .word {

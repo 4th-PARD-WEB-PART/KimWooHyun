@@ -1,4 +1,4 @@
-import './App.css';
+// import './App.css';
 import { BaseContainer, Content, Email, Input, Name } from './MyComponent';
 
 function App() {
