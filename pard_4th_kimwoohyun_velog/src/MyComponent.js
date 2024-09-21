@@ -31,36 +31,6 @@ line-height: 22.99px;
 text-align: center;`;
 
 
-export const Box=styled.p`
-  .VObejct {
-    &:hover {
-      color:#15B886;
-    }
-  }
-
-  .InputText1, .InputText2, .InputText3, .InputText4 {
-    &:hover {
-      color: #15B886;
-      border: none;
-      border-bottom: 1px solid #15B886;
-    }
-  }
-
-  // &:hover {
-  //   .VObject {
-  //     color:#15B886;
-  //   }
-    
-  //   .InputText2, 
-  //   .InputText1,
-  //   .InputText3, 
-  //   .InputText4 {
-  //   color: #15B886;
-  //   border: none;
-  //   border-bottom: 1px solid #15B886;}
-  // };
-`;
-
 export const VObject = styled.p`  padding-left: 8px;
 margin-top: 50px;
 left: 730px;
@@ -71,9 +41,6 @@ font-size: 15px;
 font-weight: 700;
 line-height: 18.15px;
 color: #ACB5BD;
-    &:hover {
-      color:#15B886;
-    }
 `;
 
 export const InputText1 = styled.input`  outline: none;
@@ -89,10 +56,7 @@ border-bottom: 1px solid #ACB5BD;
 display: flex;
 width: 249px;
 height: 30px;
-&:hover {
-  color: #15B886;
-  border: none;
-  border-bottom: 1px solid #15B886;`;
+`;
 
 
 
@@ -110,10 +74,6 @@ border-bottom: 1px solid #ACB5BD;
 display: flex;
 width: 333px;
 height: 30px;
-&:hover {
-  color: #15B886;
-  border: none;
-  border-bottom: 1px solid #15B886;
 `;
 
 export const InputText3 = styled.input`  
@@ -130,16 +90,7 @@ border-bottom: 1px solid #ACB5BD;
 display: flex;
 width: 274px;
 height: 30px;
-&:hover {
-  color: #15B886;
-  border: none;
-  border-bottom: 1px solid #15B886;`;
-
-// .box: hover.inputText3{
-//   color: #15B886;
-//   border: none;
-//   border - bottom: 1px solid #15B886;
-// }
+`;
 
 export const InputText4=styled.input`  outline: none;
 padding-left: 6px;
@@ -154,10 +105,7 @@ border-bottom: 1px solid #ACB5BD;
 display: flex;
 width: 373px;
 height: 30px;
-&:hover {
-  color: #15B886;
-  border: none;
-  border-bottom: 1px solid #15B886;`;
+`;
 
 export const Checkbox=styled.input`
 border-radius: 3px 0px 0px 0px;
@@ -226,4 +174,17 @@ font-size: 20px;
 font-weight: 700;
 line-height: 24.2px;
 color: white;
+`;
+
+export const Box=styled.p`
+  &:hover {
+    .input {
+      color:#15B886;
+    }
+    
+    .text {
+    color: #15B886;
+    border: none;
+    border-bottom: 1px solid #15B886;}
+  };
 `;
