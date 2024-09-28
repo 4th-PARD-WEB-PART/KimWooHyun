@@ -18,7 +18,7 @@ const BaseContainter = styled.div`
 const PageImage = styled.img`
   width: 100%;
   height: 160px;
-  background-color: pink;
+  background-color: blue;
 `;
 
 const PageText = styled.div`
