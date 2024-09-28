@@ -4,8 +4,8 @@ import FeedPage from './Pages/FeedPage/FeedPage';
 function App() {
   return (
     <div>
-      {/* <RegisterPage></RegisterPage> */}
-      <FeedPage></FeedPage>
+      <RegisterPage></RegisterPage>
+      {/* <FeedPage></FeedPage> */}
     </div>
   );
 }

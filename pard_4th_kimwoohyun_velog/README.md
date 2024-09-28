@@ -3,10 +3,12 @@
 ## Assgin.1
 
 회원가입 UI 만들기
+<img src="./screenShot/assign1.png" width="300" height="200" />
 
 ## Assgin.2
 
 피드 페이지 UI 만들기
+<img src="./screenShot/assign2.png" width="300" height="200" />
 
 ### `기능`
 
