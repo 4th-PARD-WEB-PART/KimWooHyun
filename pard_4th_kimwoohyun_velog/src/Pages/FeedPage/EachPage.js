@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 import pageUser from './imageFiles/user.jpeg';
 import Bheart from './imageFiles/blankheart.jpg';
-import Fheart from'./imageFiles/filledheart.jpeg';
+import Fheart from './imageFiles/filledheart.jpeg';
+import { useNavigate } from "react-router-dom";
 
 const BaseContainter = styled.div`
   width:327px;
@@ -93,7 +94,7 @@ const BottomLike = styled.div`
   justify-content: space-between;
 `;
 
-const By=styled.div`
+const By = styled.div`
 color: #858E96;
 font-family: Inter;
 font-size: 12px;
@@ -103,14 +104,14 @@ text-align: left;
 margin-left:6px;
 `;
 
-const UserName=styled.div`
+const UserName = styled.div`
 font-size:12px;
 font-weight:700;
 margin-left:3px;
 width:70px;
 `;
 
-const HeartNum=styled.p`
+const HeartNum = styled.p`
 font-size: 12px;
 
 margin: 0;
@@ -118,16 +119,22 @@ margin-left: 5px;
 `;
 
 function EachPage(props) {
-  const[isClicked,setIsClicked]=useState(false);
-  const[num,setNum]=useState(0);
-
-  const handleClick = ()=>{
+  const navToDetail = useNavigate();
+  const [isClickedPage, setToPage] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
+  const [num, setNum] = useState(0);
+  const handleClick = () => {
     setIsClicked(!isClicked);
-    setNum(num+(isClicked? -1: 1));
+    setNum(num + (isClicked ? -1 : 1));
   };
 
+  const handleDetail = () => {
+    setToPage(!isClickedPage);
+    navToDetail("/detail");
+  }
+
   return (
-    <BaseContainter>
+    <BaseContainter onClick={handleDetail}>
       <PageImage></PageImage>
       <PageText>
         <PageTextHead>{props.title}</PageTextHead>
@@ -140,12 +147,12 @@ function EachPage(props) {
       <PageTextBottom>
         <BottomInfo>
           <img src={pageUser} width="22px" height="22px"></img>
-           <By>by</By>
-           <UserName>{props.pageUser}</UserName>
+          <By>by</By>
+          <UserName>{props.pageUser}</UserName>
         </BottomInfo>
         <BottomLike>
-          <img src={isClicked? Fheart : Bheart} width="22px" height="22px" onClick={handleClick}></img>
-          <HeartNum>{Number(props.heart)+Number(num)}</HeartNum>
+          <img src={isClicked ? Fheart : Bheart} width="22px" height="22px" onClick={handleClick}></img>
+          <HeartNum>{Number(props.heart) + Number(num)}</HeartNum>
         </BottomLike>
       </PageTextBottom>
     </BaseContainter>
@@ -157,8 +164,8 @@ EachPage.defaultProps = {
   comment: 0,
   date: "2099년 1월 1일",
   pageUser: "4기 웹파트",
-  title:"제목",
-  body:"본문을 입력하세요"
+  title: "제목",
+  body: "본문을 입력하세요"
 };
 
 export default EachPage;

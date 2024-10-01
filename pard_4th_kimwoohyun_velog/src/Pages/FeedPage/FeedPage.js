@@ -10,6 +10,7 @@ import velogIcon5 from './imageFiles/recent.png';
 import velogIcon6 from './imageFiles/signal.jpeg';
 import velogIcon7 from './imageFiles/dropdown.png';
 import velogIcon8 from './imageFiles/more.png';
+import { useNavigate } from "react-router-dom";
 
 const Contents = styled.div`
   display: flex;
@@ -125,7 +126,7 @@ function FeedPage() {
         <Nav_benner>
           <NavBox w="73px">
             <img src={velogIcon4} width="30px" height="30px"></img>
-            <NavBoxTitle c="black">트렌딩</NavBoxTitle>
+            <NavBoxTitle c="black" >트렌딩</NavBoxTitle>
           </NavBox>
           <NavBox w="58px">
             <img src={velogIcon5} width="23px" height="23px"></img>
@@ -144,7 +145,7 @@ function FeedPage() {
 
       <Pages>
         <Rows>
-          <EachPage title="과제2" body="이번 꺼 좀 어렵네" date="2023년 8월 14일" comment="23" pageUser="우현" heart="10"></EachPage>
+          <EachPage title="과제2" body="이번 꺼 좀 어렵네" date="2023년 8월 14일" comment="23" pageUser="우현" heart="10" ></EachPage>
           <EachPage title="과제3" body="얼마나 어려울려나" date="2023년 9월 29일" comment="12" heart="4"></EachPage>
           <EachPage title="과제4" body="얼마나 어려울려나" date="2023년 10월 6일" comment="8" heart="2"></EachPage>
         </Rows>

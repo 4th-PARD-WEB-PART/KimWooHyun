@@ -1,7 +1,17 @@
+import { useNavigate } from "react-router-dom";
 import { Box, Button1, Button2, Checkbox, InputText1, InputText2, InputText3, InputText4, Sentence, VContent, VHeader, VObject, VPadding, VTitle, Word } from "./MyComp";
+import { useState } from "react";
+
 
 
 function RegisterPage(){
+  const navigate=useNavigate();
+  const[isLoggedIn,setIsLoggedIn]=useState(false);
+  const handleLogin=()=>{
+    setIsLoggedIn(!isLoggedIn);
+    navigate("/feed");
+  }
+
   return(
     <VTitle>
       <p className="left"></p>
@@ -36,7 +46,7 @@ function RegisterPage(){
         <br/><br/><br/><br/>
         <p>
           <Button1>취소</Button1>
-          <Button2>가입</Button2></p>
+          <Button2 onClick={handleLogin}>가입</Button2></p>
       </block>
 
       <VPadding></VPadding>
