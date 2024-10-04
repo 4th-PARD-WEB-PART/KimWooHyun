@@ -31,3 +31,26 @@ UI 변수화 -> hook 사용
 1. Head_btn 태그에 hover 속성이 적용되지 않음.
 2. 이미지들을 인터넷에서 가져옴 => figma에서 export 할 수 있음(해결)
 3. 드롭다운 어떻게 하는지 모르겠음
+
+
+## Assign.3
+
+DetailPage UI 만들기
+<br />
+<div style="text-align: center;">
+  <img src="./screenShot/assign3.png" width="500" height="450" />
+</div>
+
+
+### `기능`
+
+Router를 이용해 각 페이지간 경로화
+
+각 영역을 클릭시 설정한 경로로 이동 -> velog 아이콘, EachPage 영역
+
+useNavigate를 이용해 페이지 간 연결
+
+### `문제점`
+
+1. 사이드바가 페이지 스크롤이 되도 고정된 위치에 있게 하기 (구현x)
+2. notion HW 공지에 있는 ButtonList를 어디에 쓰는지 용도를 모르겠음  

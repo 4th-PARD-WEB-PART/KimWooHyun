@@ -256,7 +256,7 @@ function DetailPage() {
            <FeedAuthorInfo>
             <FeedAuthorImage src={dpImg6} />
              <FeedAuthorComment>
-              <CommentName>{FeedInfo.author_name}</CommentName>
+              <CommentName>{FeedInfo.author_name}</CommentName> 
               <div>{FeedInfo.author_info}</div>
             </FeedAuthorComment>
           </FeedAuthorInfo> 
