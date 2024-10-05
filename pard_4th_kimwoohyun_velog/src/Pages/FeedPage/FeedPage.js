@@ -110,6 +110,11 @@ const Rows = styled.div`
 `;
 
 function FeedPage() {
+  const navigator=useNavigate();
+  const handleEdit = ()=> {
+    navigator("/edit");
+  } 
+
   return (
     <Contents>
       <Head>
@@ -118,7 +123,7 @@ function FeedPage() {
           <img src={velogIcon1} width="40px" height="30px"></img>
           <img src={velogIcon2} width="35px" height="30px"></img>
           <Head_btn>새 글 작성</Head_btn>
-          <img src={velogIcon3} width="35px" height="35px"></img>
+          <img src={velogIcon3} width="35px" height="35px" onClick={handleEdit}></img>
         </Head_benner>
       </Head>
 
